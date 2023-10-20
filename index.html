@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,300;1,600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1><span class="travel">Travel</span><span class="rover">Rover.</span></h1>
+        <form id="form-pemesanan">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required>
+            <label for="tujuan">Tujuan:</label>
+            <select id="tujuan" name="tujuan" required>
+                <option value="">Pilih tujuan</option>
+                <option value="Jakarta">Semarang</option>
+                <option value="Jakarta">Jakarta</option>
+                <option value="Bandung">Bandung</option>
+                <option value="Surabaya">Surabaya</option>
+                <option value="Yogyakarta">Yogyakarta</option>
+                <option value="Bali">Bali</option>
+            </select>
+
+            <label for="harga">Harga Tiket:</label>
+            <input type="number" id="harga" name="harga" readonly>
+
+            <label for="jumlah">Jumlah Tiket:</label>
+            <select id="jumlah" name="jumlah" required>
+                <option value="">Pilih jumlah tiket</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+
+            <label for="member">Member:</label>
+            <input type="checkbox" id="member" name="member">
+
+            <label for="diskon">Diskon:</label>
+            <input type="number" id="diskon" name="diskon" readonly>
+
+            <button type="submit" id="submit">Pesan Tiket</button>
+
+        </form>
+        <div class="hasil" id="hasil">
+        </div>
+    </div>
+    <script src="app.js">
+    </script>
+</body>
+
+</html>

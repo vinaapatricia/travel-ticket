@@ -1,0 +1,79 @@
+:root {
+    --primary-color: #30475E; 
+    --secondary-color: #ECECEC; 
+    --dark-color:#222831;
+    --brown-color: #C1A57B;
+  }
+  
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+    }   
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .travel {
+        color: var(--dark-color);;
+      }
+      
+      .rover {
+        color:var(--primary-color);
+      }
+      
+
+    h1 {
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0;
+    }
+
+    input, select {
+      width: 300px;
+      height: 30px;
+      border: 1px solid #ccc;
+      padding: 5px;
+    }
+
+    input[type="checkbox"] {
+      width: auto;
+      height: auto;
+    }
+
+    button {
+    color: white;
+      width: 200px;
+      height: 40px;
+      background-color: var(--dark-color);
+      color: var(--primary  -color);
+      border: none;
+      margin-top: 20px;
+      border: none; 
+      cursor: pointer; 
+      transition: background-color 0.3s ease;
+    }
+      
+    button:hover {
+        color: black;
+        background-color: var(--secondary-color);
+      }
+      
+
+    .hasil {
+      margin-top: 20px;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
